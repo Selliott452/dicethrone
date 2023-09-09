@@ -1,0 +1,88 @@
+.dice {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    min-width: unset;
+    background-color: #FCFCFC;
+}
+
+.locked {
+    outline: red solid 2px;
+}
+
+.rollButton {
+    background-color: #FCFCFC;
+    width: 40px;
+    height: 40px;
+    min-width: unset;
+    padding: 5px;
+}
+
+body {
+    background-color: #FCFCFC;
+}
+
+.counterField {
+    text-align-last: center;
+}
+
+.counters {
+    display: flex;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+}
+
+.counter {
+    font-size: larger;
+    align-items: center;
+    flex: 1;
+    padding: 8px;
+}
+
+.comboPoints {
+    background-color: #FFD166;
+}
+
+.health {
+    background-color: #EF476F;
+}
+
+.roller {
+    align-items: center;
+    background-color: #26547C;
+    justify-content: center;
+    width: -webkit-fill-available;
+}
+
+.effectTracker {
+    flex: 1;
+    width: 100%;
+    align-items: center;
+}
+
+.baseLayout {
+    display: flex;
+    height: 100%;
+    padding: 5px;
+}
+
+.addEffect {
+    height: 100%;
+    background-color: #06D6A0;
+}
+
+.effectTray {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.effectAvatar {
+    width: 55px;
+    height: 55px;
+}
+
+.removeEffectLayout {
+    width: 100%;
+    justify-content: right;
+}
