@@ -7,7 +7,7 @@ spring:
     hikari:
       data-source-properties:
         socketFactory: com.google.cloud.sql.postgres.SocketFactory
-        cloudSqlInstance: dice-throne-398523:us-central1:dice-throne
+        cloudSqlInstance: ${DB_INSTANCE}
     username: postgres
     password: ${DB_PASSWORD}
     url: jdbc:postgresql:///dice-throne
