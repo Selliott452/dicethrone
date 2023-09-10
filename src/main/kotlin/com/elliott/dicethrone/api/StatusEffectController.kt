@@ -15,7 +15,7 @@ class StatusEffectController(
 
     @GetMapping("/{id}")
     fun getStatusEffect(@PathVariable id: String): StatusEffect? =
-            statusEffectService.getStatusEffect(id)
+            statusEffectService.statusEffects[id]
 
     @GetMapping("")
     fun getStatusEffects(): List<StatusEffect> =
