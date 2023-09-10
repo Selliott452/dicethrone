@@ -1,15 +1,11 @@
 package com.elliott.dicethrone
 
-import com.vaadin.flow.component.page.AppShellConfigurator
-import com.vaadin.flow.server.startup.VaadinAppShellInitializer
-import com.vaadin.flow.theme.Theme
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@Theme("dicethrone")
-class DicethroneApplication : AppShellConfigurator
+class DicethroneApplication
 
 fun main(args: Array<String>) {
-	runApplication<DicethroneApplication>(*args)
+    runApplication<DicethroneApplication>(*args)
 }
