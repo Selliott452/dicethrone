@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*
 import java.util.*
 
 @RestController
-@RequestMapping("/v1/game")
+@RequestMapping("/v1/games")
 class GameController(
         val repository: GameRepository
 ) {
