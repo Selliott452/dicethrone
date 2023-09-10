@@ -6,6 +6,7 @@ plugins {
 	id("com.vaadin") version "24.1.7"
 	kotlin("jvm") version "1.8.22"
 	kotlin("plugin.spring") version "1.8.22"
+	id("com.google.cloud.tools.jib") version "3.3.2"
 }
 
 group = "com.elliott"
@@ -42,6 +43,14 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
-tasks.withType<Test> {
-	useJUnitPlatform()
+jib {
+	from {
+		image = "eclipse-temurin"
+	}
+	to {
+		image = "us-east1-docker.pkg.dev/dice-throne-398523/dice-throne/back-end"
+	}
+	container {
+		mainClass = "com.elliott.dicethrone.DicethroneApplicationKt"
+	}
 }
