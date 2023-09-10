@@ -21,4 +21,8 @@ class GameController(
                     Game().apply {
                         this.name = name
                     })
+
+    @DeleteMapping("/delete")
+    fun delete(@PathVariable uuid: UUID) =
+            repository.deleteById(uuid)
 }
