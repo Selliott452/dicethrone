@@ -1,0 +1,61 @@
+[
+  {
+    "id": "BARBARIAN",
+    "name": "Barbarian",
+    "dice": [
+      "BARBARIAN_SWORD",
+      "BARBARIAN_SWORD",
+      "BARBARIAN_SWORD",
+      "BARBARIAN_LIFE",
+      "BARBARIAN_LIFE",
+      "BARBARIAN_CRIT"
+    ],
+    "abilities": [
+      {
+        "name": "Smack",
+        "type": "ICONS"
+      },
+      {
+        "name": "Smack",
+        "type": "ICONS"
+      },
+      {
+        "name": "Smack",
+        "type": "ICONS"
+      },
+      {
+        "name": "Sturdy Blow",
+        "type": "ICONS"
+      },
+      {
+        "name": "Fortitude",
+        "type": "ICONS"
+      },
+      {
+        "name": "Overpower",
+        "type": "ICONS"
+      },
+      {
+        "name": "Mighty Blow",
+        "type": "SMALL_STRAIGHT"
+      },
+      {
+        "name": "Crit Bash",
+        "type": "ICONS"
+      },
+      {
+        "name": "Reckless",
+        "type": "LARGE_STRAIGHT"
+      },
+      {
+        "name": "Rage!",
+        "type": "ULTIMATE"
+      },
+      {
+        "name": "Thick Skin",
+        "type": "DEFENCE"
+      }
+    ],
+    "cards": []
+  }
+]

@@ -12,8 +12,6 @@ class StatusEffectService {
 
     val statusEffects: Map<String, StatusEffect> = readInStatusEffects().associateBy { it.identifier }
 
-    fun getStatusEffect(identifier: String) = statusEffects[identifier]
-
     private fun readInStatusEffects() =
             Gson().fromJson(
                     ClassPathResource("statuseffects/status.json").getContentAsString(UTF_8),
