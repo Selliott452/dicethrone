@@ -1,0 +1,11 @@
+[
+  {
+    "identifier": "CONCUSSION",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Concussion",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token must skip their Income Phase and then remove this token.",
+    "shortDescription": "Skip Income Phase",
+    "effects": []
+  }
+]
