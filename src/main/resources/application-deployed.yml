@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    username: postgres
+    password: sa
+    url: jdbc:postgresql://dice-throne-398523:us-central1:dice-throne
