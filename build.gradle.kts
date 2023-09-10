@@ -26,6 +26,7 @@ dependencies {
 
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.postgresql:postgresql")
+	implementation("com.google.cloud.sql:postgres-socket-factory:1.13.1")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

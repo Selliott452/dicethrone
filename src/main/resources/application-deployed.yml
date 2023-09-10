@@ -4,6 +4,10 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
+    hikari:
+      data-source-properties:
+        socketFactory: com.google.cloud.sql.postgres.SocketFactory
+        cloudSqlInstance: dice-throne-398523:us-central1:dice-throne
     username: postgres
-    password: sa
-    url: jdbc:postgresql://dice-throne-398523:us-central1:dice-throne
+    password: ${DB_PASSWORD}
+    url: jdbc:postgresql:///dice-throne
