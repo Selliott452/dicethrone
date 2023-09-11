@@ -85,7 +85,14 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{uuid}/health/{delta}")
+    @GetMapping("/{uuid}/health")
+    fun getHealth(
+            @PathVariable
+            uuid: UUID,
+    ): Int = playerRepository.findById(uuid).getOrNull()?.health
+            ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
+
+    @PutMapping("/{uuid}/health/adjust/{delta}")
     fun adjustHealth(
             @PathVariable
             uuid: UUID,
@@ -109,7 +116,14 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{uuid}/cp/{delta}")
+    @GetMapping("/{uuid}/cp")
+    fun getComboPoints(
+            @PathVariable
+            uuid: UUID,
+    ): Int = playerRepository.findById(uuid).getOrNull()?.comboPoints
+            ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
+
+    @PutMapping("/{uuid}/cp/adjust/{delta}")
     fun adjustComboPoints(
             @PathVariable
             uuid: UUID,
