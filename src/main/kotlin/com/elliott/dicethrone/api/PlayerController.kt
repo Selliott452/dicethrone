@@ -38,7 +38,7 @@ class PlayerController(
         )
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{playerId}")
     fun getPlayer(
             @PathVariable
             playerId: UUID
