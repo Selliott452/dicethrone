@@ -49,7 +49,7 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{uuid}/dice/unlock")
+    @PutMapping("/{playerId}/dice/unlock")
     fun unlockDice(
             @PathVariable
             playerId: UUID,
@@ -63,7 +63,7 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{uuid}/dice/unlock/all")
+    @PutMapping("/{playerId}/dice/unlock/all")
     fun unlockAllDice(
             @PathVariable
             playerId: UUID,
@@ -75,14 +75,14 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @GetMapping("/{id}/health")
+    @GetMapping("/{playerId}/health")
     fun getHealth(
             @PathVariable
             playerId: UUID,
     ): Int = playerRepository.findById(playerId).getOrNull()?.health
             ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
 
-    @PutMapping("/{id}/health/adjust/{delta}")
+    @PutMapping("/{playerId}/health/adjust/{delta}")
     fun adjustHealth(
             @PathVariable
             playerId: UUID,
@@ -94,7 +94,7 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{id}/health/set/{value}")
+    @PutMapping("/{playerId}/health/set/{value}")
     fun setHealth(
             @PathVariable
             playerId: UUID,
