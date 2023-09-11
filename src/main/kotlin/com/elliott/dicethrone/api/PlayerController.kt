@@ -26,7 +26,7 @@ class PlayerController(
             }
     )
 
-    @DeleteMapping("/{uuid}")
+    @DeleteMapping("/delete/{uuid}")
     fun deletePlayer(
             @PathVariable
             uuid: UUID
