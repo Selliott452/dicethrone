@@ -2,6 +2,7 @@ package com.elliott.dicethrone.api
 
 import com.elliott.dicethrone.domain.game.Game
 import com.elliott.dicethrone.domain.game.GameRepository
+import com.elliott.dicethrone.domain.game.Phase
 import com.elliott.dicethrone.domain.player.Player
 import com.elliott.dicethrone.domain.player.PlayerRepository
 import com.elliott.dicethrone.service.DiceService
@@ -32,6 +33,7 @@ class GameController(
             gameRepository.save(
                     Game().apply {
                         this.name = name
+                        this.phase = Phase.INCOME
                     })
 
     @GetMapping("/{gameId}/players")
@@ -76,6 +78,7 @@ class GameController(
                         }
                 )
         )
+        gameRepository.save(this)
     } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
 
     @PutMapping("/{gameId}/leave/{playerId}")
