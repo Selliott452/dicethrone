@@ -2,7 +2,7 @@ package com.elliott.dicethrone.api
 
 
 data class CreatePlayerResource(
-        val name: String,
+        val userId: String,
         val character: String
 )
 

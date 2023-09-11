@@ -15,16 +15,6 @@ class PlayerController(
         val playerRepository: PlayerRepository,
         val diceService: DiceService
 ) {
-    @PostMapping("/create")
-    fun createPlayer(
-            @RequestBody createResource: CreatePlayerResource
-    ): Player = playerRepository.save(
-            Player().apply {
-                this.name = createResource.name
-                this.characterId = createResource.character
-                this.dice.addAll(diceService.getDice())
-            }
-    )
 
     @DeleteMapping("/delete/{playerId}")
     fun deletePlayer(

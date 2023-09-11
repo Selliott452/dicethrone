@@ -1,0 +1,1 @@
+ALTER TABLE player rename column name to user_id;

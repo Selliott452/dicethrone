@@ -13,7 +13,7 @@ class Player {
     val uuid: UUID? = null
 
     @Column
-    var name: String = ""
+    var userId: String = ""
 
     @Column
     var characterId: String = ""

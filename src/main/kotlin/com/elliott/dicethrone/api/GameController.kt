@@ -2,7 +2,9 @@ package com.elliott.dicethrone.api
 
 import com.elliott.dicethrone.domain.game.Game
 import com.elliott.dicethrone.domain.game.GameRepository
+import com.elliott.dicethrone.domain.player.Player
 import com.elliott.dicethrone.domain.player.PlayerRepository
+import com.elliott.dicethrone.service.DiceService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.server.ResponseStatusException
@@ -13,7 +15,8 @@ import kotlin.jvm.optionals.getOrNull
 @RequestMapping("/v1/games")
 class GameController(
         val gameRepository: GameRepository,
-        val playerRepository: PlayerRepository
+        val playerRepository: PlayerRepository,
+        val diceService: DiceService
 ) {
 
     @GetMapping("")
@@ -48,7 +51,7 @@ class GameController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
 
 
-    @PutMapping("/{gameId}/players/remove/{playeruuid}")
+    @PutMapping("/{gameId}/players/remove/{playerId}")
     fun removePlayer(@PathVariable gameId: UUID,
                      @PathVariable playerId: UUID) =
             gameRepository.findById(gameId).getOrNull()?.let {
@@ -58,6 +61,31 @@ class GameController(
                 )
                 gameRepository.save(it)
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
+
+    @PutMapping("/{gameId}/join")
+    fun createPlayer(
+            @PathVariable gameId: UUID,
+            @RequestBody createResource: CreatePlayerResource
+    ): Game = gameRepository.findById(gameId).getOrNull()?.apply {
+        this.players.add(
+                playerRepository.save(
+                        Player().apply {
+                            this.userId = createResource.userId
+                            this.characterId = createResource.character
+                            this.dice.addAll(diceService.getDice())
+                        }
+                )
+        )
+    } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
+
+    @PutMapping("/{gameId}/leave/{playerId}")
+    fun createPlayer(
+            @PathVariable gameId: UUID,
+            @PathVariable playerId: UUID
+    ): Game = gameRepository.findById(gameId).getOrNull()?.apply {
+        this.players.remove(playerRepository.findById(playerId).getOrNull()
+                ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found"))
+    } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
 
     @DeleteMapping("/delete/{gameId}")
     fun delete(@PathVariable gameId: UUID) =
