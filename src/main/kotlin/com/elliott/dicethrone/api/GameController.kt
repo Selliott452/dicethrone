@@ -14,6 +14,9 @@ class GameController(
         val repository: GameRepository
 ) {
 
+    @GetMapping("")
+    fun getGames() = repository.findAll()
+
     @GetMapping("/{uuid}")
     fun getGame(@PathVariable uuid: UUID): Game? =
             repository.findById(uuid).getOrNull()
