@@ -19,9 +19,9 @@ class GameController(
     @GetMapping("")
     fun getGames() = gameRepository.findAll()
 
-    @GetMapping("/{uuid}")
-    fun getGame(@PathVariable uuid: UUID): Game? =
-            gameRepository.findById(uuid).getOrNull()
+    @GetMapping("/{gameId}")
+    fun getGame(@PathVariable gameId: UUID): Game? =
+            gameRepository.findById(gameId).getOrNull()
                     ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
 
     @PostMapping("/create")
@@ -31,35 +31,35 @@ class GameController(
                         this.name = name
                     })
 
-    @GetMapping("/{uuid}/players")
-    fun getPlayers(@PathVariable uuid: UUID) =
-            gameRepository.findById(uuid).getOrNull()?.players
+    @GetMapping("/{gameId}/players")
+    fun getPlayers(@PathVariable gameId: UUID) =
+            gameRepository.findById(gameId).getOrNull()?.players
                     ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
 
-    @PutMapping("/{uuid}/players/add/{playeruuid}")
-    fun addPlayer(@PathVariable uuid: UUID,
-                  @PathVariable playeruuid: UUID) =
-            gameRepository.findById(uuid).getOrNull()?.let {
+    @PutMapping("/{gameId}/players/add/{playerId}")
+    fun addPlayer(@PathVariable gameId: UUID,
+                  @PathVariable playerId: UUID) =
+            gameRepository.findById(gameId).getOrNull()?.let {
                 it.players.add(
-                        playerRepository.findById(playeruuid).getOrNull()
+                        playerRepository.findById(playerId).getOrNull()
                                 ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
                 )
                 gameRepository.save(it)
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
 
 
-    @PutMapping("/{uuid}/players/remove/{playeruuid}")
-    fun removePlayer(@PathVariable uuid: UUID,
-                     @PathVariable playeruuid: UUID) =
-            gameRepository.findById(uuid).getOrNull()?.let {
+    @PutMapping("/{gameId}/players/remove/{playeruuid}")
+    fun removePlayer(@PathVariable gameId: UUID,
+                     @PathVariable playerId: UUID) =
+            gameRepository.findById(gameId).getOrNull()?.let {
                 it.players.remove(
-                        playerRepository.findById(playeruuid).getOrNull()
+                        playerRepository.findById(playerId).getOrNull()
                                 ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
                 )
                 gameRepository.save(it)
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Game Not Found")
 
-    @DeleteMapping("/delete/{uuid}")
-    fun delete(@PathVariable uuid: UUID) =
-            gameRepository.deleteById(uuid)
+    @DeleteMapping("/delete/{gameId}")
+    fun delete(@PathVariable gameId: UUID) =
+            gameRepository.deleteById(gameId)
 }

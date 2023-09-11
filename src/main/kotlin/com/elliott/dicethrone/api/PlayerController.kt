@@ -26,33 +26,33 @@ class PlayerController(
             }
     )
 
-    @DeleteMapping("/delete/{uuid}")
+    @DeleteMapping("/delete/{playerId}")
     fun deletePlayer(
             @PathVariable
-            uuid: UUID
-    ) = if (playerRepository.existsById(uuid)) {
-        playerRepository.deleteById(uuid)
+            playerId: UUID
+    ) = if (playerRepository.existsById(playerId)) {
+        playerRepository.deleteById(playerId)
     } else {
         throw ResponseStatusException(
                 HttpStatus.NOT_FOUND, "Player Not Found"
         )
     }
 
-    @GetMapping("/{uuid}")
+    @GetMapping("/{id}")
     fun getPlayer(
             @PathVariable
-            uuid: UUID
-    ): Player = playerRepository.findById(uuid).getOrNull()
+            playerId: UUID
+    ): Player = playerRepository.findById(playerId).getOrNull()
             ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
 
-    @PutMapping("/{uuid}/dice/lock")
+    @PutMapping("/{playerId}/dice/lock")
     fun lockDice(
             @PathVariable
-            uuid: UUID,
+            playerId: UUID,
             @RequestBody
             resource: PlayerDiceResource
     ): Player = playerRepository.save(
-            playerRepository.findById(uuid).getOrNull()?.apply {
+            playerRepository.findById(playerId).getOrNull()?.apply {
                 this.dice.find { it.id == resource.id }.apply {
                     this?.locked = true
                 }
@@ -62,11 +62,11 @@ class PlayerController(
     @PutMapping("/{uuid}/dice/unlock")
     fun unlockDice(
             @PathVariable
-            uuid: UUID,
+            playerId: UUID,
             @RequestBody
             resource: PlayerDiceResource
     ): Player = playerRepository.save(
-            playerRepository.findById(uuid).getOrNull()?.apply {
+            playerRepository.findById(playerId).getOrNull()?.apply {
                 this.dice.find { it.id == resource.id }.apply {
                     this?.locked = false
                 }
@@ -76,73 +76,73 @@ class PlayerController(
     @PutMapping("/{uuid}/dice/unlock/all")
     fun unlockAllDice(
             @PathVariable
-            uuid: UUID,
+            playerId: UUID,
     ): Player = playerRepository.save(
-            playerRepository.findById(uuid).getOrNull()?.apply {
+            playerRepository.findById(playerId).getOrNull()?.apply {
                 this.dice.forEach {
                     it.locked = false
                 }
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @GetMapping("/{uuid}/health")
+    @GetMapping("/{id}/health")
     fun getHealth(
             @PathVariable
-            uuid: UUID,
-    ): Int = playerRepository.findById(uuid).getOrNull()?.health
+            playerId: UUID,
+    ): Int = playerRepository.findById(playerId).getOrNull()?.health
             ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
 
-    @PutMapping("/{uuid}/health/adjust/{delta}")
+    @PutMapping("/{id}/health/adjust/{delta}")
     fun adjustHealth(
             @PathVariable
-            uuid: UUID,
+            playerId: UUID,
             @PathVariable
             delta: Int
     ): Player = playerRepository.save(
-            playerRepository.findById(uuid).getOrNull()?.apply {
+            playerRepository.findById(playerId).getOrNull()?.apply {
                 this.health += delta
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{uuid}/health/set/{value}")
+    @PutMapping("/{id}/health/set/{value}")
     fun setHealth(
             @PathVariable
-            uuid: UUID,
+            playerId: UUID,
             @PathVariable
             value: Int
     ): Player = playerRepository.save(
-            playerRepository.findById(uuid).getOrNull()?.apply {
-                this.health = health
+            playerRepository.findById(playerId).getOrNull()?.apply {
+                this.health = value
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @GetMapping("/{uuid}/cp")
+    @GetMapping("/{playerId}/cp")
     fun getComboPoints(
             @PathVariable
-            uuid: UUID,
-    ): Int = playerRepository.findById(uuid).getOrNull()?.comboPoints
+            playerId: UUID,
+    ): Int = playerRepository.findById(playerId).getOrNull()?.comboPoints
             ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
 
-    @PutMapping("/{uuid}/cp/adjust/{delta}")
+    @PutMapping("/{playerId}/cp/adjust/{delta}")
     fun adjustComboPoints(
             @PathVariable
-            uuid: UUID,
+            playerId: UUID,
             @PathVariable
             delta: Int
     ): Player = playerRepository.save(
-            playerRepository.findById(uuid).getOrNull()?.apply {
+            playerRepository.findById(playerId).getOrNull()?.apply {
                 this.comboPoints += delta
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{uuid}/cp/set/{value}")
+    @PutMapping("/{playerId}/cp/set/{value}")
     fun setComboPoints(
             @PathVariable
-            uuid: UUID,
+            playerId: UUID,
             @PathVariable
             value: Int
     ): Player = playerRepository.save(
-            playerRepository.findById(uuid).getOrNull()?.apply {
+            playerRepository.findById(playerId).getOrNull()?.apply {
                 this.comboPoints = value
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
