@@ -22,7 +22,7 @@ class Player {
     var health: Int = 30
 
     @Column
-    var comboPoints: Int = 2
+    var combatPoints: Int = 2
 
     @Transient
     val hand: MutableList<Card> = mutableListOf()

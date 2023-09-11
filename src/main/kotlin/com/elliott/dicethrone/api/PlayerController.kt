@@ -117,33 +117,33 @@ class PlayerController(
     )
 
     @GetMapping("/{playerId}/cp")
-    fun getComboPoints(
+    fun getCombatPoints(
             @PathVariable
             playerId: UUID,
-    ): Int = playerRepository.findById(playerId).getOrNull()?.comboPoints
+    ): Int = playerRepository.findById(playerId).getOrNull()?.combatPoints
             ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
 
     @PutMapping("/{playerId}/cp/adjust/{delta}")
-    fun adjustComboPoints(
+    fun adjustCombatPoints(
             @PathVariable
             playerId: UUID,
             @PathVariable
             delta: Int
     ): Player = playerRepository.save(
             playerRepository.findById(playerId).getOrNull()?.apply {
-                this.comboPoints += delta
+                this.combatPoints += delta
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
     @PutMapping("/{playerId}/cp/set/{value}")
-    fun setComboPoints(
+    fun setCombatPoints(
             @PathVariable
             playerId: UUID,
             @PathVariable
             value: Int
     ): Player = playerRepository.save(
             playerRepository.findById(playerId).getOrNull()?.apply {
-                this.comboPoints = value
+                this.combatPoints = value
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 }

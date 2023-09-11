@@ -1,0 +1,1 @@
+ALTER TABLE player rename column combo_points to combat_points;
