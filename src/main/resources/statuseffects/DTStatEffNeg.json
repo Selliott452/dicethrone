@@ -1,0 +1,218 @@
+[
+  {
+    "identifier": "BARBED_VINE",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Barbed Vine",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token receives 1 dmg for each Roll Attempt beyond the first during their Offensive Roll Phase, up to a maximum of 2 dmg per turn. This token is removed and then this dmg is applied at the conclusion of the Roll Phase.",
+    "shortDescription": "Receive 1 dmg for additional Roll Attempts",
+    "effects": []
+  },
+  {
+    "identifier": "BLEED",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Bleed",
+    "stackLimit": 2,
+    "description": "A player afflicted with this token must roll 1 die during their Upkeep Phase. On 1-4, they are dealt 1 dmg. On 5-6, remove this token.",
+    "shortDescription": "Roll 1 die in Upkeep Phase. On 1-4, receive 1 dmg, otherwise, remove token",
+    "effects": []
+  },
+  {
+    "identifier": "BLIND",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Blind",
+    "stackLimit": 1,
+    "description": "The next time a player afflicted with this token concludes their Offensive Roll Phase, they must remove it and roll 1 die. On 1-2, their Offensive Roll Phase fails and has no effect of any kind.",
+    "shortDescription": "On 1-2, fail Offensive Roll Phase",
+    "effects": []
+  },
+  {
+    "identifier": "BLINDING_LIGHT",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Blinding Light",
+    "stackLimit": 1,
+    "description": "The next time a player afflicted with this token concludes their Offensive Roll Phase, they must remove this token and roll 1 die:\nOn 1, their Offensive Roll Phase has no effect of any kind.\nOn 2-3, any dmg they deal for the remainder of the Roll Phase is reduced by 1/2 (rounded up).",
+    "shortDescription": "Roll 1 die to fail or reduce Attack dmg",
+    "effects": []
+  },
+  {
+    "identifier": "BOUNTY",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Bounty",
+    "stackLimit": 1,
+    "description": "When a player afflicted with this token is Attacked by an opponent, the attacker increases their dmg by 1 and gains 1 CP. Persistent.",
+    "shortDescription": "Receive +1 dmg & Attacker gets 1 CP",
+    "effects": []
+  },
+  {
+    "identifier": "BURN",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Burn",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token receives 2 dmg during their Upkeep Phase. Persistent.",
+    "shortDescription": "Receive 2 dmg in Upkeep Phase",
+    "effects": []
+  },
+  {
+    "identifier": "CONCUSSION",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Concussion",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token must skip their Income Phase and then remove this token.",
+    "shortDescription": "Skip Income Phase",
+    "effects": []
+  },
+  {
+    "identifier": "CONSTRICT",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Constrict",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token gets 1 fewer roll attempts during their next Offensive Roll Phase. This roll attempt may be reacquired at any time for 1 CP. At the conclusion of the Roll Phase, remove this token.",
+    "shortDescription": "Spend CP or lose one roll attempt",
+    "effects": []
+  },
+  {
+    "identifier": "CRIMSON_BANDS",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Crimson Bands",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token cannot play cards during their next Roll Phase. Then, at the conclusion of the Roll Phase, discard this token.",
+    "shortDescription": "Cannot play cards during next Roll Phase",
+    "effects": []
+  },
+  {
+    "identifier": "DELAYED_POISON",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Delayed Poison",
+    "stackLimit": 2,
+    "description": "A player afflicted with this token removes it at the conclusion of their turn and then receives 3 dmg.",
+    "shortDescription": "Receive 2 dmg at the end of your turn",
+    "effects": []
+  },
+  {
+    "identifier": "ENTANGLE",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Entangle",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token gets 1 fewer Roll Attempts during their next Offensive Roll Phase. At the conclusion of the Roll Phase, remove this token",
+    "shortDescription": "Lose 1 Roll Attempt",
+    "effects": []
+  },
+  {
+    "identifier": "KNOCKDOWN",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Knockdown",
+    "stackLimit": 1,
+    "description": "To remove this token, a player afflicted with it must spend 2CP before the start of their Offensive Roll Phase. If the player does not, they must skip their Offensive Roll Phase and then remove this token.",
+    "shortDescription": "Spend 2CP or skip Offensive Roll Phase",
+    "effects": []
+  },
+  {
+    "identifier": "NANITE",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Nanite",
+    "stackLimit": 3,
+    "description": "When Detonated, remove all tokens and deal dmg based on the number of Nanites on each player:\n1 Nanite: receive 1 dmg.\n2 Nanites: receive 3 dmg.\n3 Nanites: receive 5 dmg.\nDuring Upkeep Phase, a player rolls 1 die per Nanite they are afflicted with: on 6, remove this token.",
+    "shortDescription": "Deals dmg based on number of Nanites",
+    "effects": []
+  },
+  {
+    "identifier": "PARASITE",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Parasite",
+    "stackLimit": 1,
+    "description": "During their Upkeep Phase, if a player inflicted with this token has a Positive Status Effect, they receive 1 dmg. Additionally, if they spend a Positive Status Effect to successfully prevent or avoid dmg, remove Parasite and they receive 3 as an isolated source of undefendable dmg.",
+    "shortDescription": "Positive Status effects cause dmg",
+    "effects": []
+  },
+  {
+    "identifier": "PARLAY",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Parlay",
+    "stackLimit": 1,
+    "description": "A player afflicted with Parlay may not deal any damage as a result of their Offensive Roll Phase (although other effects may still apply). A the conclusion of the Roll Phase, remove this token.",
+    "shortDescription": "Deal no dmg when Attacking",
+    "effects": []
+  },
+  {
+    "identifier": "POISON",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Poison",
+    "stackLimit": 3,
+    "description": "A player afflicted with this token is dealt 1 dmg per Poison token during the Upkeep Phase of their turn. Persistent.",
+    "shortDescription": "Receive 1 dmg in Upkeep Phase",
+    "effects": []
+  },
+  {
+    "identifier": "POWDER_KEG",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Powder Keg",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token must roll 1 die dureing their Upkeep Phase. On 1-2, the Keg blows up. On 3-5, nothing happens. On 6, the player afflicted with Powder Keg may transfer the token to a chosen player. Additionally, if a player becomes inflicted with Powder Keg while already inflicted with Powder Keg, the first Keg immediately blows up. When a Keg blows up, remove it and deal 3 as an isolated source of undefendable dmg.",
+    "shortDescription": "Roll 1 die in Upkeep Phase. On 1-2, receive 3 dmg, on 6 pass it to anyone",
+    "effects": []
+  },
+  {
+    "identifier": "REALITY_WARP",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Reality Warp",
+    "stackLimit": 1,
+    "description": "If a player is inflicted with this token when they begin their Offensive Roll Phase, they must remove it and use one of Scarlet Witch's dice in place of one of their own until the end of the Offensive Roll Phase.",
+    "shortDescription": "Force your opponent to use one of your dice",
+    "effects": []
+  },
+  {
+    "identifier": "SHAME",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Shame",
+    "stackLimit": 2,
+    "description": "When a player afflicted by SHame would deal dmg as a result of their Offensive Roll Phase, remove this token and reduce that dmg by 1. Attack Modifier.",
+    "shortDescription": "Reduces Attack dmg by 1",
+    "effects": []
+  },
+  {
+    "identifier": "STUN",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Stun",
+    "stackLimit": 1,
+    "description": "A player afflicted with this token may take no actions of any kind (i.e. no cards may be played, no defense may be made, no status tokens or passive abilities may be used, etc). After the Attack concludes, the player who inflicted Stun removes the token and then immediately targets the same opponent with an additional Offensive Roll Phase (if this oppont is removed from the battlefield, this additional Offensive Roll Phase is forfeited).",
+    "shortDescription": "Perform another Offensive Roll Phase",
+    "effects": []
+  },
+  {
+    "identifier": "TARGETED",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Targeted",
+    "stackLimit": 1,
+    "description": "When a player afflicted with this token is Attacked by an opponent, the Incoming Attack dmg is increased by 2. Persistent.",
+    "shortDescription": "+2 damage for Incoming Attack dmg",
+    "effects": []
+  },
+  {
+    "identifier": "TIME_BOMB",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Time Bomb",
+    "stackLimit": 2,
+    "description": "When inflicting this token, if you have at least 6 Ability Upgrades in play, place it on the 0:01 side up. Otherwise place it on the 0:02 side up.\n\nDuring their Upkeep Phase, a player afflicted with this token must roll 1 die: \nOn 1-5, advance the Time Bomb.\nOn 6, remove the token.\n\nWhen a Time Bomb is advanced:\nIf the token is on the 0:02 side, flip it to the 0:01 side.\nIf the token is on the 0:01 side, the player afflicted with this token removes it and receives 4 dmg as an isolated source of undefendable dmg.",
+    "shortDescription": "Roll a 6 to attempt to defuse. Take 4 dmg if you run out of time",
+    "effects": []
+  },
+  {
+    "identifier": "WEBBED",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Webbed",
+    "stackLimit": 1,
+    "description": "This token has no effect the turn it is inflicted or transferred.\nOn subsequent turns, when a player afflicted with this token is Attacked with normal damage, the damage type becomes undefendable instead and this token is immediately removed.",
+    "shortDescription": "Next incoming Attack is undefendable",
+    "effects": []
+  },
+  {
+    "identifier": "WITHER",
+    "type": "NEGATIVE_STATUS_EFFECT",
+    "name": "Wither",
+    "stackLimit": 2,
+    "description": "If a player with a Wither token would deal damage as a result of their Offensive Roll Phase, reduce that dmg by 1 per Wither token. Persistent.",
+    "shortDescription": "Attacker deals -1 dmg per token",
+    "effects": []
+  }
+]

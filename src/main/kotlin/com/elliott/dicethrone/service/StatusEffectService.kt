@@ -13,8 +13,15 @@ class StatusEffectService {
     val statusEffects: Map<String, StatusEffect> = readInStatusEffects().associateBy { it.identifier }
 
     private fun readInStatusEffects() =
-            Gson().fromJson(
-                    ClassPathResource("statuseffects/status.json").getContentAsString(UTF_8),
-                    Array<StatusEffect>::class.java
-            ).toList()
+            listOf("statuseffects/DTStatEffCompanion.json",
+                    "statuseffects/DTStatEffNeg.json",
+                    "statuseffects/DTStatEffPos.json",
+                    "statuseffects/DTStatEffUnique.json"
+            ).map {
+                Gson().fromJson(
+                        ClassPathResource(it).getContentAsString(UTF_8),
+                        Array<StatusEffect>::class.java
+                ).toList()
+            }.flatten()
+
 }

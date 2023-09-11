@@ -1,0 +1,137 @@
+[
+  {
+    "identifier": "BLESSING_OF_DIVINITY",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Blessing of Divinity",
+    "stackLimit": 1,
+    "description": "The next time a player (or team) with this token would have their health reduced to 0, remove this token and set their health to 1 instead. This token may not be removed or transferred by any other means.",
+    "shortDescription": "Prevent being defeated",
+    "effects": []
+  },
+  {
+    "identifier": "COSMIC_RAY",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Cosmic Ray",
+    "stackLimit": 2,
+    "description": "After Attacking, a player with this token may spend it and roll 2 dice. Then choose one of the 2 dice and add the value of the die to the damage total. Attack Modifier.\nCan only spend one per turn.\nCannot be spent the turn it's gained.\nCannot be removed or transferred by any means.",
+    "shortDescription": "Roll 2 dice and pick one for dmg bonus",
+    "effects": []
+  },
+  {
+    "identifier": "COVERT_OPS",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Covert Ops",
+    "stackLimit": 3,
+    "description": "You may spend this token once per turn during your Main Phase to do one of the following effects:\nPut an Ability Upgrade from your hand into play.\nLook at the top 3 cards of your deck. If none of them are Ability Upgrades, you may reveal these cards and search your deck for an Ability Upgrade. Show it to your opponent and add it to your hand. Then shuffle your deck. Otherwise, put them back in any order.\nThis token may not be transferred or removed by any means.",
+    "shortDescription": "Use to look at or rearrange cards",
+    "effects": []
+  },
+  {
+    "identifier": "CURSED_DOUBLOON",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Cursed Doubloon",
+    "stackLimit": 5,
+    "description": "Any player other than the Pirate afflicted with Cursed Doubloons is dealt 1 dmg per Cursed Doubloon during their Upkeep Phase.\nThese Persistent tokens may not be moved or removed from any player except as a result of abilities on the Pirate's hero board.\nWhenever the Pirate would gain a Cursed Doubloon, she may shoose not to.\nCursed Doubloon tokens may stack up to 5x on the Pirate and up to 3x on anyone else.",
+    "shortDescription": "Receive 1 dmg in Upkeep Phase (except Pirate)",
+    "effects": []
+  },
+  {
+    "identifier": "DOMINANCE",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Dominance",
+    "stackLimit": 1,
+    "description": "When a player with this token Attacks, they must roll 1 die:\nOn 1, they must choose a teammate to target instead. If they cannot, they must discard 1 card randomly. Then remove this token.\nOn 2-5, nothing happens.\nOn 6, remove this token.\n\nThis token may not be transferred by any means (but can be removed).",
+    "shortDescription": "Redirect Attack to teammate or discard",
+    "effects": []
+  },
+  {
+    "identifier": "HEX",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Hex",
+    "stackLimit": 1,
+    "description": "Whenever a player afflicted with this token rolls a 6, it's as if their die has been altered to a blank die face that has no value. A the conclusion of their turn, remove this token. This token may not be transferred by any means (but can be removed).",
+    "shortDescription": "6's are considered blanks",
+    "effects": []
+  },
+  {
+    "identifier": "HOLY_PRESENCE",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Holy Presence",
+    "stackLimit": 2,
+    "description": "During their Upkeep Phase, a player with this token deals 1 dmg to all opponents. This token may not be transferredby any means (but can be removed).",
+    "shortDescription": "Deal 1 dmg to all opponents",
+    "effects": []
+  },
+  {
+    "identifier": "ILLUSION",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Illusion",
+    "stackLimit": 2,
+    "description": "Begin the game with your 3 Illusion Cards set aside.\nA player with this token may spend it when being Attacked. If spent:\n1. Present the 3 Illusion Cards to your opponent face-down in any order. You may suggest which card they should select.\n2. The Attacker chooses any card.\n3. Flip over the chosen card and resolve the text.\n\nThis token may not be transferred by any means (but can be removed).",
+    "shortDescription": "Attempt to find Loki among his illusions",
+    "effects": []
+  },
+  {
+    "identifier": "INVISIBILITY",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Invisibility",
+    "stackLimit": 1,
+    "description": "When a player with this token is Attacked with an undefendable Attack, they may choose to spend this token to activate a Defensive Ability.\nThis token may not be transferred by any means (but can be removed).",
+    "shortDescription": "Roll defense against an undefendable Attack",
+    "effects": []
+  },
+  {
+    "identifier": "KING'S_HAND",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "King's Hand",
+    "stackLimit": 999,
+    "description": "",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "LIFE_SIPHON",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Life Siphon",
+    "stackLimit": 2,
+    "description": "If you Offensive Roll Phase results in an Attack, Steal 1 Health. Attack Modifier. Persistent. This token may not be transferred by any means (but can be removed).",
+    "shortDescription": "Your Attack steals 1 Health",
+    "effects": []
+  },
+  {
+    "identifier": "SALVE",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Salve",
+    "stackLimit": 999,
+    "description": "Players may choose to spend Salve tokens to Heal wounds taken during battle or to reviv fallen teammates. The amount Healed is indicated on the bottom of each Scenario card.\nThis token may not be transferred or removed by any means.",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "SILENCE",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Silence",
+    "stackLimit": 1,
+    "description": "A player with this token may not activate their Small Straight or Large Straight abilities. At the conclusion of their turn, remove this token.",
+    "shortDescription": "Cannot activate Straights",
+    "effects": []
+  },
+  {
+    "identifier": "SPELLBOUND",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Spellbound",
+    "stackLimit": 3,
+    "description": "When inflicted, place this token so that it covers the name of an opponent's Offensive Ability (cannot cover an Ultimate Ability).\nA player with this token may not activate the Offensive Ability that is covered by this token.\nA player who only has one Offensive Ability uncovered, cannot be afflicted with this token.\nRemove this token at the conclusion of their Offensive Roll Phase.\nThis token may not be transferred by any means (but can be removed).",
+    "shortDescription": "An Offensive Ability cannot be rolled",
+    "effects": []
+  },
+  {
+    "identifier": "VIBRANIUM_SUIT",
+    "type": "UNIQUE_STATUS_EFFECT",
+    "name": "Vibranium Suit",
+    "stackLimit": 1,
+    "description": "A player with this token may spend it to prevent 3 incoming damage. This token may not be transferred by any means (but can be removed).",
+    "shortDescription": "Prevent incoming damage",
+    "effects": []
+  }
+]

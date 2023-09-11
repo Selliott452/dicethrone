@@ -1,0 +1,335 @@
+[
+  {
+    "identifier": "ACCURACY",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Accuracy",
+    "stackLimit": 1,
+    "description": "A player with this token may spend it at the conclusion of their Offensive Roll Phase to make their Attack undefendable.",
+    "shortDescription": "Spend to make your Attack undefendable",
+    "effects": []
+  },
+  {
+    "identifier": "AGILITY",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Agility",
+    "stackLimit": 2,
+    "description": "When a player with this token receives damage, they may spend it and roll 1 die. If the outcome is 1-3, prevent 1/2 incoming damage (rounded up).",
+    "shortDescription": "Spend & roll 1-3 to avoid 1/2 damage",
+    "effects": []
+  },
+  {
+    "identifier": "BACK_STRIKE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Back Strike",
+    "stackLimit": 1,
+    "description": "When a player with Back Strike receives dmg as a result of an opponent's Offensive Roll Phase, they may choose to spend this token. If spent, roll 1 die. Then deal 1/2 the value as dmg (rounded up) to the attacking player.",
+    "shortDescription": "Spend to deal half of 1 die dmg when Attacked",
+    "effects": []
+  },
+  {
+    "identifier": "BAG_OF_TRICKS",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Bag of Tricks",
+    "stackLimit": 2,
+    "description": "During their Upkeep Phase, a player with this token removes it and rolls 1 die:\nOn 1, lose 1CP\nOn 2-5, Loki chooses whether the player heals 2, gains 1CP, or receives 2 dmg.\nOn 6, gain 2CP.",
+    "shortDescription": "Roll and gain a surprise",
+    "effects": []
+  },
+  {
+    "identifier": "BLOOD_POWER",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Blood Power",
+    "stackLimit": 4,
+    "description": "1 token: If your Offensive Roll Phase results in an Attack, add 2 dmg. This counts as an Attack Modifier.\n2 tokens: You may remove one status effect from yourself.\n3 tokens: Draw 2 cards, then discard any card from your hand.\n4 tokens: Heal equal to the amount of damage you successfully dealt this Roll Phase.",
+    "shortDescription": "A player with these tokens may spend them to activate each effect once per turn",
+    "effects": []
+  },
+  {
+    "identifier": "BONUS_DAMAGE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Bonus Damage",
+    "stackLimit": 2,
+    "description": "Players may choose to spend these tokens during their Offensive Roll Phase. Each token adds the indicated number of damage to your Attack. Attack Modifier",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "CHAOS",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Chaos",
+    "stackLimit": 6,
+    "description": "These tokens are gained and spent by various Minions and Bosses to power certain abilities. The specific Minion/Boss ability indicates how these tokens are used. These tokens may not be used by Heroes.",
+    "shortDescription": "Use when an ability asks for it",
+    "effects": []
+  },
+  {
+    "identifier": "CHI",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Chi",
+    "stackLimit": 5,
+    "description": "Chi tokens may be spent at any time to prevent 1 incoming damage per token.\nAlternatively, you may spend Chi to increase Attack dmg by 1 per token spent. Chi may not be used to increase dmg the turn that it was gained. Attack Modifier.",
+    "shortDescription": "A player may spend these tokens to increase or reduce dmg",
+    "effects": []
+  },
+  {
+    "identifier": "CLEANSE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Cleanse",
+    "stackLimit": 3,
+    "description": "A player with this token may spend it at any time to remove a single status effect token from themselves.",
+    "shortDescription": "Spend to remove a status effect token",
+    "effects": []
+  },
+  {
+    "identifier": "COMBO",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Combo",
+    "stackLimit": 1,
+    "description": "If you Offensive Roll Phase resulted in an Attack, you may spend this token at the conclusion of you opponent's Defensive Roll Phase. If spent, immediately target the same opponent with an additional Offensive Roll Phase. Can only spend once per turn.",
+    "shortDescription": "Perform another Offensive Roll Phase",
+    "effects": []
+  },
+  {
+    "identifier": "CONJURE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Conjure",
+    "stackLimit": 1,
+    "description": "Once per turn, a player with this token may spend it during their Main Phase to either:\nGain a Positive Status Effect from a chosen player's leaflet. Any opponent may prevent this by discarding a card of their choice.\nInflict Reality Warp on a chosen opponent.",
+    "shortDescription": "Gain a chosen player's Positive Status Effect or inflict Reality Warp",
+    "effects": []
+  },
+  {
+    "identifier": "COSMIC_FLARE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Cosmic Flare",
+    "stackLimit": 3,
+    "description": "During their Upkeep Phase, a player with this token deals 1 dmg per Cosmic Flare to all opponents. Then remove 1 of these tokens.",
+    "shortDescription": "Deal 1 dmg per token to all opponents",
+    "effects": []
+  },
+  {
+    "identifier": "CRACKLE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Crackle",
+    "stackLimit": 3,
+    "description": "If a player concludes their Offensive Roll Phase with an Attack, they may spend this token. If spent, add 1 dmg per Positive or Negative Status Effect on their Hero Board (excluding the Crackle that was just spent), up to a maximum of 3 dmg. Only two Crackle may be spent per turn. Attack Modifier.",
+    "shortDescription": "Spend to add dmg for each status effect",
+    "effects": []
+  },
+  {
+    "identifier": "CRIT",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Crit",
+    "stackLimit": 1,
+    "description": "If a player with this token is dealking at least 5 dmg as a result of their Offensive Roll Phase, this token may be spent to deal 4 dmg. Attack Modifier.",
+    "shortDescription": "Spend to add 4 dmg to your Attack",
+    "effects": []
+  },
+  {
+    "identifier": "DEJA_VU",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Deja Vu",
+    "stackLimit": 1,
+    "description": "Instead of activating an Ability, a player with this token may spend it to conclude their current Offensive Roll Phase and then start a new Offensive Roll Phase.",
+    "shortDescription": "Restart your Offensive Roll Phase",
+    "effects": []
+  },
+  {
+    "identifier": "ELECTROKINESIS",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Electrokinesis",
+    "stackLimit": 4,
+    "description": "A player may spend 3 Electrokinesis at any time to draw 1 card",
+    "shortDescription": "Boost abilities or spend to draw a card",
+    "effects": []
+  },
+  {
+    "identifier": "EVASIVE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Evasive",
+    "stackLimit": 3,
+    "description": "When a player with this token receives damage, they may choose to spend it. If spent, roll 1 die. If the outcome is 1-2, no dmg is received (although other associated effects may still apply). Multiple tokens may be spent in an attempt to prevent the same source of samage",
+    "shortDescription": "Spend & roll 1-2 to avoid danger",
+    "effects": []
+  },
+  {
+    "identifier": "FIRE_MASTERY",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Fire Mastery",
+    "stackLimit": 5,
+    "description": "A player with this token must 'cool off' during their Upkeep Phase by removing 1 token (Fire Mastery increases the poser of various abilities).",
+    "shortDescription": "Remove 1 token per turn",
+    "effects": []
+  },
+  {
+    "identifier": "FLIGHT",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Flight",
+    "stackLimit": 3,
+    "description": "A player with this token may spend it at any time during the Roll Phase. Once spent, roll 2 dice. If a 6 was rolled, Activate this token. If Activated during the Offensive Roll Phase, this player's Attack becomes undefendable. If Activated during the Defensive Roll Phase, ignore all incoming damage.",
+    "shortDescription": "Roll 2 dice to dodge or make undefendable",
+    "effects": []
+  },
+  {
+    "identifier": "GUARD_BREAK",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Guard Break",
+    "stackLimit": 2,
+    "description": "If a player concludes their Offensive Roll Phase with an Attack, they may spend this token and roll 1 die. If the outcome is 1-3, the Attack becomes undefendable.",
+    "shortDescription": "Attack becomes undefendable on 1-3",
+    "effects": []
+  },
+  {
+    "identifier": "HONOR",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Honor",
+    "stackLimit": 2,
+    "description": "Spend to increase you Attack dmg by 1 or spend 2 Honor to increase you Attack dmg by 3. Attack Modifier.",
+    "shortDescription": "Spend to increase Attack dmg",
+    "effects": []
+  },
+  {
+    "identifier": "KINETIC ENERGY",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Kinetic Energy",
+    "stackLimit": 8,
+    "description": "For every 2 Kinetic Energy, increase damage from you Attacks by 1. Attack Modifier.\nUpon reaching Kinetic Energy stack limit, immedately remove all Kinetic Energy tokens. Then gain 2CP, draw 2 cards, and deal 5 to a chosen opponent as an isolated source of undefendable dmg.",
+    "shortDescription": "Boosts damage & burst at stack limit",
+    "effects": []
+  },
+  {
+    "identifier": "MESMERIZE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Mesmerize",
+    "stackLimit": 1,
+    "description": "A player with this token may spend it and roll 1 die. On 5-6, you may force the opponent to re-roll any 1 die.",
+    "shortDescription": "Force an opponent to re-roll a die",
+    "effects": []
+  },
+  {
+    "identifier": "NINJUTSU",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Ninjutsu",
+    "stackLimit": 3,
+    "description": "After Attacking, a player with this token may spend it and roll 1 die:\nOn 1-3, add 1 dmg.\nOn 4-5, add 2 dmg.\nOn 6, choose either to add 2 dmg, inflict Delayed Poison, or make you Attack undefendable.\nAttack Modifier.",
+    "shortDescription": "Spend & roll to modify your Attack",
+    "effects": []
+  },
+  {
+    "identifier": "NYRA'S_BOND",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Nyra's Bond",
+    "stackLimit": 1,
+    "description": "If the Huntress is Attacked while Nyra is Active, she may spend this token instead of using her Defensive Ability (even if the Attack is undefendable). If spent, any damage received for the remainder of the Roll Phase may be distributed freely between the Huntress and Nyra.\nAlternatively, this token may be spent at anytime to Heal Nyra 2.",
+    "shortDescription": "Distribute damage received between Huntress & Nyra",
+    "effects": []
+  },
+  {
+    "identifier": "PREMONITION",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Premonition",
+    "stackLimit": 3,
+    "description": "A player with these tokens may spend them once per turn during their Income Phase to activate one of the following effects:\n1 token: draw 2 cards instead of 1.\n3 tokens: draw 3 cards instead of 1.\nWhen activated, one of the drawn cards must be placed on either the top or bottom of the deck.",
+    "shortDescription": "Draw more cards during Income Phase",
+    "effects": []
+  },
+  {
+    "identifier": "PROBABILITY_MANIPULATION",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Probability Manipulation",
+    "stackLimit": 2,
+    "description": "Spend to change the value of any of your dice displaying an even number (2,4,6), up or down by a value of 1 (a value of 6 cannot be increased).",
+    "shortDescription": "Tip an even number up or down on your dice",
+    "effects": []
+  },
+  {
+    "identifier": "PROTECT",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Protect",
+    "stackLimit": 1,
+    "description": "A player with this token may spend it at any time to prevent 1/2 incoming damage (rounded up).",
+    "shortDescription": "Prevent 1/2 incoming damage",
+    "effects": []
+  },
+  {
+    "identifier": "RADIANCE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Radiance",
+    "stackLimit": 2,
+    "description": "A player with this token may spend it to change the value of any die rolled as part of the Roll Attempt during their Defensive Roll Phase to a 6",
+    "shortDescription": "Change a die to a 6 during defense",
+    "effects": []
+  },
+  {
+    "identifier": "RELOAD",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Reload",
+    "stackLimit": 2,
+    "description": "If a player concludes their Offensive Roll Phase with an Attack, they may spend this token. If spent, roll 1 die and add 1/2 the value as dmg (rounded up). Attack Modifier.",
+    "shortDescription": "Spend & add 1/2 of 1 die to Attack dmg",
+    "effects": []
+  },
+  {
+    "identifier": "RETRIBUTION",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Retribution",
+    "stackLimit": 1,
+    "description": "This token may be spent after being Attacked as a result of an opponent's Offensive Roll Phase to deal half of the incoming dmg (rounded up) back to the Attacker.",
+    "shortDescription": "Spend when Attacked to deal 1/2 dmg back",
+    "effects": []
+  },
+  {
+    "identifier": "SHADOWS",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Shadows",
+    "stackLimit": 1,
+    "description": "When a player with this token is damaged as a result of an opponent's Offensive Roll Phase, no damage is received and no defense is made (although the attack still 'succeeds' & other effects may apply). Discard this token after the affected player starts & concludes a single turn while under its effects",
+    "shortDescription": "A player with this token avoids damage",
+    "effects": []
+  },
+  {
+    "identifier": "SMOKE_BOMB",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Smoke Bomb",
+    "stackLimit": 1,
+    "description": "When a player with this token receives dmg, they may choose to spend it. If spent, roll 1 die. If the outcome is 1-3, no dmg is received (although other associated effects may still apply).",
+    "shortDescription": "Spend & roll 1-3 to avoid damage",
+    "effects": []
+  },
+  {
+    "identifier": "SNEAK_ATTACK",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Sneak Attack",
+    "stackLimit": 1,
+    "description": "After Attacking, a player with this token may spend it and roll 1 die to add the value of the die to their damamge total. Attack Modifier.",
+    "shortDescription": "Spend to add 1 die to your Attack dmg",
+    "effects": []
+  },
+  {
+    "identifier": "SYNTH",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Synth",
+    "stackLimit": 7,
+    "description": "Spend during Main Phase to:\n2 tokens: Build a Basic Bot, placing it on the Artificer.\n3 tokens: Upgrade a Basic Bot to Advanced (flip token).\n\nSpend to Activate Bots:\n2 tokens: Activate a Basic Bot.\n1 token: Activate an Advanced Bot.",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "TACTICAL_ADVANTAGE",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Tactical Advantage",
+    "stackLimit": 5,
+    "description": "1 token: Gain 1 CP.\n1 token: You may re-roll 1 of your dice at any time.\n3 tokens: Draw 1 card.\n3 tokens: Inflict Targeted on a chosen opponent.\n4 tokens: Gain Protect.\n4 tokens: Transfer one status effect from any player to any player. This may only be done during your Main Phase.",
+    "shortDescription": "A player with these tokens may spend them at any time for a variety of effects",
+    "effects": []
+  },
+  {
+    "identifier": "WELLSPRING",
+    "type": "POSITIVE_STATUS_EFFECT",
+    "name": "Wellspring",
+    "stackLimit": 1,
+    "description": "A player with this token may spend it during their Main Phase & roll 1 die: gain 1/2 the value as Health (rounded up).",
+    "shortDescription": "Heal 1/2 of 1 die during Main Phase",
+    "effects": []
+  }
+]

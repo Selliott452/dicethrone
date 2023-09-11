@@ -1,0 +1,74 @@
+[
+  {
+    "identifier": "DRYAD_SPIRIT",
+    "type": "COMPANION",
+    "name": "Dryad Spirit",
+    "stackLimit": 1,
+    "description": "Spend Dryad to add 3 dmg. Attack Modifier.\nIf an opponent's Attack would inflict a Negative Status Effect upon you, you may spend Dryad at the conclusion of their Offensive Roll Phase to prevent that incoming status effect.",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "HEAL_BOT",
+    "type": "COMPANION",
+    "name": "Heal Bot",
+    "stackLimit": 2,
+    "description": "You may Activate this Bot up to two time after being Attacked with at lease 6 dmg. Upon activation, roll 1 die:\nOn 1-3, Heal 1.\nOn 4-6, Heal 2.",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "MJOLNIR",
+    "type": "COMPANION",
+    "name": "Mjolnir",
+    "stackLimit": 1,
+    "description": "Begin the game with Mjolnir on your Hero Board.\nYou may Throw or Retrieve Mjolnir at any time by discarding a card. If an ability tells you to Throw or Retrieve it, you do not need to discard a card.\nWhen you Throw Mjolnir, place it on a chosen opponent and deal 1 as an isolated source of undefendable dmg.\nWhen you Retrieve Mjolnir, place it back on your Hero Board and gain Electrokinesis.\nYou cannot Throw Mjolnir at an opponent unless it is on your Hero Board. You cannot Retrieve Mjolnir if it is already on your Hero Board.\nIn a multiplayer game, if an opponent who has Mjolnir is defeated, Retrieve it.",
+    "shortDescription": "Throw or Retrieve to gain bonuses",
+    "effects": []
+  },
+  {
+    "identifier": "NANOBOT",
+    "type": "COMPANION",
+    "name": "Nanobot",
+    "stackLimit": 1,
+    "description": "You may Activate this Bot during you Upkeep Phase. Upon activation, Detonate all Nanites.",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "NYRA",
+    "type": "COMPANION",
+    "name": "Nyra",
+    "stackLimit": 1,
+    "description": "Nyra has a maximum of 7 Health.\nIf you are being Attacked while Nyra is Active, you may choose to pass the full amount of this damamge to Nyra instead (unless the opponent is Attacking with their Ultimate Ability).\nIf Nyra receives damage, you may not use your Defensive Ability.\nIf Nyra is Active and you Offensive Roll Phase results in an Attack, increase that dmg by 2",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "SAPLING_SPIRIT",
+    "type": "COMPANION",
+    "name": "Sapling Spirit",
+    "stackLimit": 2,
+    "description": "Spend Sapling to Heal 1 and gain 1CP.\nSpend Sapling and 1CP to draw 1 card.",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "SEEDLING_SPIRIT",
+    "type": "COMPANION",
+    "name": "Seedling Spirit",
+    "stackLimit": 3,
+    "description": "Spend Seedling to re-roll 1 of your dice",
+    "shortDescription": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHOCK_BOT",
+    "type": "COMPANION",
+    "name": "Shock Bot",
+    "stackLimit": 1,
+    "description": "If your Offensive Roll Phase results in an Attack, you may Activate this Bot. Upon activation, increase that dmg by 3. This Bot may never be activated twice in one turn.",
+    "shortDescription": "",
+    "effects": []
+  }
+]
