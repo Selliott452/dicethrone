@@ -35,6 +35,20 @@ class PlayerController(
     ): Player = playerRepository.findById(playerId).getOrNull()
             ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
 
+    @PutMapping("/{playerId}/dice/roll")
+    fun rollDice(
+            @PathVariable
+            playerId: UUID,
+    ): Player = playerRepository.save(
+            playerRepository.findById(playerId).getOrNull()?.apply {
+                this.dice.forEach {
+                    if (!it.locked) {
+                        it.diceValue = diceService.getRandomValue()
+                    }
+                }
+            } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
+    )
+
     @PutMapping("/{playerId}/dice/lock")
     fun lockDice(
             @PathVariable

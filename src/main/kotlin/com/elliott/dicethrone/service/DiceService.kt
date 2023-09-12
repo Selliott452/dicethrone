@@ -21,4 +21,6 @@ class DiceService(
                         }
                     }
             )
+
+    fun getRandomValue() = (1..6).random()
 }
