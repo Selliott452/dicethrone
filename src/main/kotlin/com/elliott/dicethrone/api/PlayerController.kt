@@ -49,6 +49,38 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
+    @PutMapping("/{playerId}/dice/roll/{diceId}")
+    fun rollDiceById(
+            @PathVariable
+            playerId: UUID,
+            @PathVariable
+            diceId: Int
+    ): Player = playerRepository.save(
+            playerRepository.findById(playerId).getOrNull()?.apply {
+                this.dice.find { it.id == diceId }?.apply {
+                    if (!this.locked) {
+                        this.diceValue = diceService.getRandomValue()
+                    }
+                } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Dice Not Found")
+            } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
+    )
+
+    @PutMapping("/{playerId}/dice/set/{diceId}/{value}")
+    fun rollDiceById(
+            @PathVariable
+            playerId: UUID,
+            @PathVariable
+            diceId: Int,
+            @PathVariable
+            value: Int
+    ): Player = playerRepository.save(
+            playerRepository.findById(playerId).getOrNull()?.apply {
+                this.dice.find { it.id == diceId }?.apply {
+                    this.diceValue = value
+                } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Dice Not Found")
+            } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
+    )
+
     @PutMapping("/{playerId}/dice/lock/{diceId}")
     fun lockDice(
             @PathVariable
@@ -57,9 +89,9 @@ class PlayerController(
             diceId: Int
     ): Player = playerRepository.save(
             playerRepository.findById(playerId).getOrNull()?.apply {
-                this.dice.find { it.id == diceId }.apply {
-                    this?.locked = true
-                }
+                this.dice.find { it.id == diceId }?.apply {
+                    this.locked = true
+                } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Dice Not Found")
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
@@ -71,9 +103,9 @@ class PlayerController(
             diceId: Int
     ): Player = playerRepository.save(
             playerRepository.findById(playerId).getOrNull()?.apply {
-                this.dice.find { it.id == diceId }.apply {
-                    this?.locked = false
-                }
+                this.dice.find { it.id == diceId }?.apply {
+                    this.locked = false
+                } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Dice Not Found")
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
