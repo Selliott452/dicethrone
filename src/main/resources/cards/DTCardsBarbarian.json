@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "BARB_19",
+    "name": "SMACK II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_20",
+    "name": "SMACK III",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_21",
+    "name": "STURDY BLOW 11",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_22",
+    "name": "STURDY BLOW II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_23",
+    "name": "MIGHTY BLOW II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_24",
+    "name": "CRIT BASH II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_25",
+    "name": "FORTITUDE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_26",
+    "name": "OVERPOWER II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_27",
+    "name": "RECKLESS II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_28",
+    "name": "THICK SKIN II",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_29",
+    "name": "CONCUSS!",
+    "cost": 1,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Inflict Concussion on a chosen opponent.",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_30",
+    "name": "HEAD BASH!",
+    "cost": 0,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "If you successfully dealt at least 8 dmg to an opponent after their defence concluded, play this card to inflict Concussion.",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_31",
+    "name": "GET SOME!",
+    "cost": 2,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Attack Modifier.\nRoll 5 dice:\nAdd 1 x SWORD dmg. Inflict Concussion.",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_32",
+    "name": "FEELIN' GOOD!",
+    "cost": 0,
+    "type": "INSTANT_ACTION",
+    "text": "Roll 3 dice: Heal 1 + 2 x LIFE.",
+    "effects": []
+  },
+  {
+    "identifier": "BARB_33",
+    "name": "ADRENALINE SURGE!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn POW, Heal 2 & inflict Concussion on a chosen opponent.\nOn any other outcome, draw 1 card.",
+    "effects": []
+  }
+]

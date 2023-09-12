@@ -1,0 +1,146 @@
+[
+  {
+    "identifier": "HERO_01",
+    "name": "TRANSFERENCE!",
+    "cost": 2,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Transfer 1 status effect token from a chosen player to another chosen player.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_02",
+    "name": "WHAT STATUS EFFECTS?",
+    "cost": 2,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Remove all status effect tokens from a chosen player.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_03",
+    "name": "VEGAS BABY!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die: Gain 1/2 the value as CP (rounded up).",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_04",
+    "name": "GET THAT OUTTA HERE!",
+    "cost": 1,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Remove a status effect token from a chosen player.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_05",
+    "name": "TRIPLE UP!",
+    "cost": 2,
+    "type": "INSTANT_ACTION",
+    "text": "Draw 3 cards.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_06",
+    "name": "DOUBLE UP!",
+    "cost": 1,
+    "type": "INSTANT_ACTION",
+    "text": "Draw 2 cards.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_07",
+    "name": "BUH,BYE!",
+    "cost": 2,
+    "type": "INSTANT_ACTION",
+    "text": "Remove a status effect token from a chosen player.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_08",
+    "name": "TIP IT!",
+    "cost": 1,
+    "type": "INSTANT_ACTION",
+    "text": "Increase or decrease any die by the value of 1 (a value of 1 cannot be decreased and a value of 6 cannot be increased).",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_09",
+    "name": "GETTING PAID!",
+    "cost": 0,
+    "type": "INSTANT_ACTION",
+    "text": "Gain 2 CP",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_10",
+    "name": "NOT THIS TIME!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "A chosen player prevents 6 incoming dmg.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_11",
+    "name": "TWICE AS WILD!",
+    "cost": 3,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Change the values of any two dice.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_12",
+    "name": "TRY, TRY AGAIN!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "You or a chosen teammate may re-roll up to two dice (can be the same die twice in a row or two different dice).",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_13",
+    "name": "SO WILD!",
+    "cost": 2,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Change the value of any one die.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_14",
+    "name": "SAMESIES!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Change the value of one of your dice to be identical to the value of another one of you dice (that was rolled within the same phase and for the same purpose).",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_15",
+    "name": "ONE MORE TIME!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "A chosen player may perform an additional Roll Attempt of up to five dice duting their Offensive Roll Phase.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_16",
+    "name": "HELPING HAND!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Select one of your opponent's dice and force them to re-roll it.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_17",
+    "name": "BETTER D!",
+    "cost": 0,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "A chosen player may perform an additional Roll Attempt of up to five dice during their Defensive Roll Phase.",
+    "effects": []
+  },
+  {
+    "identifier": "HERO_18",
+    "name": "SIX-IT!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Change the value of one of your dice to a 6.",
+    "effects": []
+  }
+]  

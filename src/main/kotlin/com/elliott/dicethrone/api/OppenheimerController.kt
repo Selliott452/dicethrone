@@ -17,8 +17,8 @@ class OppenheimerController(
 
     @DeleteMapping("/deleteAll")
     fun deleteAll() {
-        gameRepository.deleteAll()
-        playerRepository.deleteAll()
-        diceRepository.deleteAll()
+        gameRepository.truncateTable()
+        playerRepository.truncateTable()
+        diceRepository.truncateTable()
     }
 }

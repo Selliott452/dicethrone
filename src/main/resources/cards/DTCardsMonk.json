@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "MONK_19",
+    "name": "FIST STRIKE II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_20",
+    "name": "FIST STRIKE III",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_21",
+    "name": "MEDITATE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_22",
+    "name": "FIST OF HARMONY II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_23",
+    "name": "LOTUS STRIKE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_24",
+    "name": "COMBO STRIKE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_25",
+    "name": "TEMPEST RUSH II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_26",
+    "name": "FIST OF TRANQUILITY II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_27",
+    "name": "SERENITY II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_28",
+    "name": "SERENITY III",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_29",
+    "name": "PALM STRIKE!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Inflict Knockdown on a chosen opponent.",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_30",
+    "name": "MYSTIC MANTRA!",
+    "cost": 3,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Gain 1 Chi.\nGain Evasive & Cleanse.\nInflict Knockdown on a chosen opponent.",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_31",
+    "name": "RUMINATE!",
+    "cost": 3,
+    "type": "INSTANT_ACTION",
+    "text": "Gain 5 Chi.",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_32",
+    "name": "CONTEMPLATE!",
+    "cost": 0,
+    "type": "INSTANT_ACTION",
+    "text": "Gain 2 Chi.",
+    "effects": []
+  },
+  {
+    "identifier": "MONK_33",
+    "name": "ENLIGHTENMENT!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn LOTUS, gain 2 Chi, Evasive, & Cleanse.\nOn any other outcome, draw 1 card.",
+    "effects": []
+  }
+]

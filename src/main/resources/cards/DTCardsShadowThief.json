@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "SHAD_19",
+    "name": "DAGGER STRIKE II",
+    "cost": 0,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_20",
+    "name": "PICKPOCKET II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_21",
+    "name": "SHIFTY STRIKE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_22",
+    "name": "INSIDIOUS STRIKE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_23",
+    "name": "SHADOW DANCE II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_24",
+    "name": "CARDUCOPIA II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_25",
+    "name": "SHADOW DEFENSE II",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_26",
+    "name": "COUNTER STRIKE II",
+    "cost": 4,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_27",
+    "name": "SNEAKY!",
+    "cost": 1,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Gain Sneak Attack.",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_28",
+    "name": "POISON WOUND!",
+    "cost": 2,
+    "type": "INSTANT_ACTION",
+    "text": "Inflict Poison on a chosen opponent.",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_29",
+    "name": "WILD SHADOW!",
+    "cost": 4,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Change the value of any one die.\nIf in Shadows, change the values of any two dice instead.",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_30",
+    "name": "SHADOW COIN!",
+    "cost": 0,
+    "type": "INSTANT_ACTION",
+    "text": "Gain 2CP.\nIf in Shadows, gain 3CP instead.",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_31",
+    "name": "ENTER THE SHADOWS!",
+    "cost": 4,
+    "type": "INSTANT_ACTION",
+    "text": "Gain Shadows.",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_32",
+    "name": "CARD TRICK!",
+    "cost": 2,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "A chosen opponent discards 1 card randomly.\nAdditionally, draw 1 card. If in Shadows, draw 2 cards instead.",
+    "effects": []
+  },
+  {
+    "identifier": "SHAD_33",
+    "name": "SHADOW MELD!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn SHADOW, gain Sneak Attack& 2CP.\nOn any other outcome, draw 1 card.",
+    "effects": []
+  }
+]

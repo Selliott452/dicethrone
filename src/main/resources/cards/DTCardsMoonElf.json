@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "MOON_19",
+    "name": "LONGBOW II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_20",
+    "name": "LONGBOW III",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_21",
+    "name": "DEMISING SHOT II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_22",
+    "name": "COVERED SHOT II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_23",
+    "name": "EXPLODING ARROW II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_24",
+    "name": "EXPLODING ARROW III",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_25",
+    "name": "ENTANGLING SHOT II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_26",
+    "name": "BLINDING SHOT II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_27",
+    "name": "ECLIPSE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_28",
+    "name": "MISSED ME II",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_29",
+    "name": "MOON MAGIC!",
+    "cost": 4,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Gain Evasive. Inflict Blind, Entangle, & Targeted on a chosen opponent.",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_30",
+    "name": "TAKE THAT!",
+    "cost": 0,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Attack Modifier.\nRoll 1 die:\nOn ARROW, add 2 dmg.\nOn FOOT, inflict Entangle.\nOn MOON, inflict Blind.",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_31",
+    "name": "VOLLEY!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Attack Modifier.\nRoll 5 dice:\nAdd 1 x ARROW dmg.\nInflict Entangle.",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_32",
+    "name": "EVADE!",
+    "cost": 1,
+    "type": "INSTANT_ACTION",
+    "text": "A chosen player gains Evasive.",
+    "effects": []
+  },
+  {
+    "identifier": "MOON_33",
+    "name": "LUNAR UMBRA!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn MOON, inflict Blind, Entangle, & Targeted on a chosen opponent.",
+    "effects": []
+  }
+]

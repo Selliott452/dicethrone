@@ -6,11 +6,6 @@ CREATE TABLE player (
     combo_points int not null
 );
 
-CREATE TABLE player_dice (
-    player_id uuid not NULL,
-    dice_id int not null
-);
-
 CREATE SEQUENCE dice_id_seq;
 
 CREATE TABLE dice (
@@ -19,3 +14,9 @@ CREATE TABLE dice (
     icon varchar NOT NULL,
     locked boolean NOT NULL
 );
+
+CREATE TABLE player_dice (
+    player_id uuid not NULL REFERENCES player (uuid),
+    dice_id int not null REFERENCES dice (id)
+);
+

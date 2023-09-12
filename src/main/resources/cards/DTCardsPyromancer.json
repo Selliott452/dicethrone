@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "PYRO_19",
+    "name": "FIREBALL II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_20",
+    "name": "PYROBLAST II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_21",
+    "name": "PYROBLAST III",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_22",
+    "name": "BURNING SOUL II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_23",
+    "name": "COMBUSTION II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_24",
+    "name": "HOT STREAK II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_25",
+    "name": "IGNITE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_26",
+    "name": "METEORITE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_27",
+    "name": "MOLTEN ARMOR II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_28",
+    "name": "MOLTEN ARMOR III",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_29",
+    "name": "WARM UP!",
+    "cost": 0,
+    "type": "HERO_UPGRADE",
+    "text": "Gain 1 Fire Mastery.\nThen spend CP as desired and gain 1 additional Fire Mastery for each CP spent.",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_30",
+    "name": "FIRE UP!",
+    "cost": 3,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Increase Fire Mastery stack limit by 1.\nThen gain 2 Fire Mastery.",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_31",
+    "name": "RED HOT!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Attack Modifier.\nAdd 1 dmg per Fire Mastery.",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_32",
+    "name": "HUZZAH!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Attack Modifier.\nRoll 1 die:\nOn FLAME, add 3 dmg.\nOn BLAZE, inflict Burn.\nOn FIERY SOUL, gain 2 Fire Mastery.\nOn METEOR, inflict Knockdown.",
+    "effects": []
+  },
+  {
+    "identifier": "PYRO_33",
+    "name": "INFERNAL INFUSION!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn METEOR, gain max Fire Mastery.\nOn any other outcome, draw 1 card.",
+    "effects": []
+  }
+]
