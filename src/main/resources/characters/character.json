@@ -56,6 +56,25 @@
         "type": "DEFENCE"
       }
     ],
-    "cards": []
+    "cards": [
+      "HERO_01",
+      "HERO_02",
+      "HERO_03",
+      "HERO_04",
+      "HERO_05",
+      "HERO_06",
+      "HERO_07",
+      "HERO_08",
+      "HERO_09",
+      "HERO_10",
+      "HERO_11",
+      "HERO_12",
+      "HERO_13",
+      "HERO_14",
+      "HERO_15",
+      "HERO_16",
+      "HERO_17",
+      "HERO_18"
+    ]
   }
 ]

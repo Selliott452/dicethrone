@@ -5,6 +5,7 @@ import com.elliott.dicethrone.domain.game.GameRepository
 import com.elliott.dicethrone.domain.game.Phase
 import com.elliott.dicethrone.domain.player.Player
 import com.elliott.dicethrone.domain.player.PlayerRepository
+import com.elliott.dicethrone.service.CharacterService
 import com.elliott.dicethrone.service.DiceService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
@@ -17,7 +18,8 @@ import kotlin.jvm.optionals.getOrNull
 class GameController(
         val gameRepository: GameRepository,
         val playerRepository: PlayerRepository,
-        val diceService: DiceService
+        val diceService: DiceService,
+        val characterService: CharacterService
 ) {
 
     @GetMapping("")
@@ -75,6 +77,7 @@ class GameController(
                             this.userId = createResource.userId
                             this.characterId = createResource.character
                             this.dice.addAll(diceService.getDice())
+                            characterService.populateDeck(this)
                         }
                 )
         )

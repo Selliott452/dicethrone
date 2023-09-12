@@ -1,6 +1,6 @@
 package com.elliott.dicethrone.domain.player
 
-import com.elliott.dicethrone.domain.card.Card
+import com.elliott.dicethrone.domain.character.CharacterId
 import com.elliott.dicethrone.domain.dice.Dice
 import jakarta.persistence.*
 import java.util.*
@@ -16,7 +16,8 @@ class Player {
     var userId: String = ""
 
     @Column
-    var characterId: String = ""
+    @Enumerated
+    var characterId: CharacterId? = null
 
     @Column
     var health: Int = 30
@@ -24,11 +25,17 @@ class Player {
     @Column
     var combatPoints: Int = 2
 
-    @Transient
-    val hand: MutableList<Card> = mutableListOf()
+    @ElementCollection(fetch = FetchType.EAGER, targetClass = String::class)
+    @CollectionTable(name = "player_hand", joinColumns = [JoinColumn(name = "player_id")])
+    @Column(name = "card_id", nullable = false)
+    @OrderColumn(name = "card_order")
+    val hand: MutableList<String> = mutableListOf()
 
-    @Transient
-    val deck: MutableList<Card> = mutableListOf()
+    @ElementCollection(fetch = FetchType.EAGER, targetClass = String::class)
+    @CollectionTable(name = "player_deck", joinColumns = [JoinColumn(name = "player_id")])
+    @Column(name = "card_id", nullable = false)
+    @OrderColumn(name = "card_order")
+    val deck: MutableList<String> = mutableListOf()
 
     @OneToMany(cascade = [CascadeType.ALL])
     @JoinTable(
@@ -37,6 +44,5 @@ class Player {
             inverseJoinColumns = [JoinColumn(name = "dice_id", referencedColumnName = "id")]
     )
     val dice: MutableList<Dice> = mutableListOf()
-
 
 }
