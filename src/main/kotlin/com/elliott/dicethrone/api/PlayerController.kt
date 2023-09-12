@@ -49,29 +49,29 @@ class PlayerController(
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{playerId}/dice/lock")
+    @PutMapping("/{playerId}/dice/lock/{diceId}")
     fun lockDice(
             @PathVariable
             playerId: UUID,
-            @RequestBody
-            resource: PlayerDiceResource
+            @PathVariable
+            diceId: Int
     ): Player = playerRepository.save(
             playerRepository.findById(playerId).getOrNull()?.apply {
-                this.dice.find { it.id == resource.id }.apply {
+                this.dice.find { it.id == diceId }.apply {
                     this?.locked = true
                 }
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
-    @PutMapping("/{playerId}/dice/unlock")
+    @PutMapping("/{playerId}/dice/unlock/{diceId}")
     fun unlockDice(
             @PathVariable
             playerId: UUID,
-            @RequestBody
-            resource: PlayerDiceResource
+            @PathVariable
+            diceId: Int
     ): Player = playerRepository.save(
             playerRepository.findById(playerId).getOrNull()?.apply {
-                this.dice.find { it.id == resource.id }.apply {
+                this.dice.find { it.id == diceId }.apply {
                     this?.locked = false
                 }
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
