@@ -15,7 +15,7 @@ class CardService {
             "cards/DTCardsMoonElf.json",
             "cards/DTCardsNinja.json",
             "cards/DTCardsPaladin.json",
-            "cards/DTCardsTreant.sjon",
+            "cards/DTCardsTreant.json",
             "cards/DTCardsPyromancer.json",
             "cards/DTCardsShadowThief.json"
     )
