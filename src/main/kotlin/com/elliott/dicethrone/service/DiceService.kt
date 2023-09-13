@@ -1,5 +1,6 @@
 package com.elliott.dicethrone.service
 
+import com.elliott.dicethrone.domain.character.CharacterId
 import com.elliott.dicethrone.domain.dice.Dice
 import com.elliott.dicethrone.domain.dice.DiceIcon
 import com.elliott.dicethrone.domain.dice.DiceRepository
@@ -11,7 +12,7 @@ class DiceService(
         val diceRepository: DiceRepository
 ) {
 
-    fun getDice() =
+    fun getDice(): MutableIterable<Dice> =
             diceRepository.saveAll(
                     (1..5).map {
                         Dice().apply {
@@ -23,4 +24,13 @@ class DiceService(
             )
 
     fun getRandomValue() = (1..6).random()
+
+    fun setDiceValue(value: Int, characterId: CharacterId, dice: Dice) =
+            dice.apply {
+                this.diceValue = value
+                this.icon = characterService.characters[characterId]?.dice?.get(diceValue - 1) ?: DiceIcon.UNDEFINED
+            }
+
+    fun rollDice(character: CharacterId, dice: Dice) =
+            setDiceValue(getRandomValue(), character, dice)
 }

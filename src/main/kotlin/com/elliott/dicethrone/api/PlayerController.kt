@@ -40,12 +40,13 @@ class PlayerController(
             @PathVariable
             playerId: UUID,
     ): Player = playerRepository.save(
-            playerRepository.findById(playerId).getOrNull()?.apply {
-                this.dice.forEach {
+            playerRepository.findById(playerId).getOrNull()?.let { player ->
+                player.dice.forEach {
                     if (!it.locked) {
-                        it.diceValue = diceService.getRandomValue()
+                        diceService.rollDice(player.characterId!!, it)
                     }
                 }
+                player
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
@@ -56,12 +57,13 @@ class PlayerController(
             @PathVariable
             diceId: Int
     ): Player = playerRepository.save(
-            playerRepository.findById(playerId).getOrNull()?.apply {
-                this.dice.find { it.id == diceId }?.apply {
+            playerRepository.findById(playerId).getOrNull()?.let { player ->
+                player.dice.find { it.id == diceId }?.apply {
                     if (!this.locked) {
-                        this.diceValue = diceService.getRandomValue()
+                        diceService.rollDice(player.characterId!!, this)
                     }
                 } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Dice Not Found")
+                player
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
@@ -74,10 +76,11 @@ class PlayerController(
             @PathVariable
             value: Int
     ): Player = playerRepository.save(
-            playerRepository.findById(playerId).getOrNull()?.apply {
-                this.dice.find { it.id == diceId }?.apply {
-                    this.diceValue = value
+            playerRepository.findById(playerId).getOrNull()?.let { player ->
+                player.dice.find { it.id == diceId }?.apply {
+                    diceService.setDiceValue(value, player.characterId!!, this)
                 } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Dice Not Found")
+                player
             } ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "Player Not Found")
     )
 
