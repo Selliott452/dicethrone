@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "TREA_19",
+    "name": "SPLINTER II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_20",
+    "name": "SPLINTER III",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_21",
+    "name": "TEND II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_22",
+    "name": "OVERGROWTH II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_23",
+    "name": "VENGEFUL VINES II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_24",
+    "name": "CALL OF THE WILD II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_25",
+    "name": "NATURE'S GRASP II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_26",
+    "name": "ROOTED II",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_27",
+    "name": "HARVEST!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Remove up to 3 Spirits and gain 1CP per Spirit removed.\nIf at least 2 were removed, up to two chosen players gain Wellspring.",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_28",
+    "name": "CULTIVATE!",
+    "cost": 3,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Grow 3 Spirits.",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_29",
+    "name": "WILL O' WISP",
+    "cost": 1,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 3 dice:\nOn BRANCH, deal 1 collateral dmg to all opponents.\nOn LEAF, gain Wellspring.\nOn SPIRIT, grow 1 Spirit.",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_30",
+    "name": "DOWN POUR!",
+    "cost": 2,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "You may grow all existing Spirits once each (in any order).",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_31",
+    "name": "STOMP!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Attack Modifier\nRoll 5 dice:\nAdd 1 x BRANCH dmg.\nIf at least 3 dmg was added, inflict Barbed Vine.",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_32",
+    "name": "DRINK DEEP!",
+    "cost": 1,
+    "type": "INSTANT_ACTION",
+    "text": "A chosen player gains Wellspring.",
+    "effects": []
+  },
+  {
+    "identifier": "TREA_33",
+    "name": "MOTHER TREE!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn SPIRIT, grow 4 Spirits.\nOn any other outcome, draw 1 card.",
+    "effects": []
+  }
+]

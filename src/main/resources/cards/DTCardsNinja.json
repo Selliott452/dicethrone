@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "NINJ_19",
+    "name": "SLASH II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_20",
+    "name": "DEATH BLOSSOM II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_21",
+    "name": "SMOKESCREEN II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_22",
+    "name": "WALK THE LINE II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_23",
+    "name": "POISON BLADE II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_24",
+    "name": "SHADOW FANG II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_25",
+    "name": "SHADEWALK II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_26",
+    "name": "SHADE SHIFT II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_27",
+    "name": "POISON DART!",
+    "cost": 2,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Inflict Delayed Poison on a chosen opponent.",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_28",
+    "name": "THROWING STARS!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Attack Modifier.\nRoll 5 dice:\nAdd 1 x SHURIKEN dmg.\nYou may re-roll up to five of these dice.",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_29",
+    "name": "FAN OF KNIVES!",
+    "cost": 2,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Deal 1 undefendable dmg to three chosen opponents (may choose the same opponent multiple times).",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_30",
+    "name": "SMOKE OFFERING!",
+    "cost": 0,
+    "type": "INSTANT_ACTION",
+    "text": "If you discard 1 card, a chosen player gains Smoke Bomb.",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_31",
+    "name": "TRAIN!",
+    "cost": 0,
+    "type": "INSTANT_ACTION",
+    "text": "Gain Ninjutsu.",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_32",
+    "name": "ESCAPE!",
+    "cost": 0,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Play only after being Attacked.\nRoll 1 die:\nOn NINJATO, prevent 1 dmg.\nOn SHURIKEN, prevent 2 dmg.\nOn MASK, gain Smoke Bomb.",
+    "effects": []
+  },
+  {
+    "identifier": "NINJ_33",
+    "name": "DOJO!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn MASK, gain Smoke Bomb & 2 Ninjutsu.\nOn any other outcome, draw 1 card.",
+    "effects": []
+  }
+]

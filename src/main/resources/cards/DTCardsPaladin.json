@@ -1,0 +1,122 @@
+[
+  {
+    "identifier": "PALA_19",
+    "name": "TITHE II",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_20",
+    "name": "RETALIATE II",
+    "cost": 1,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_21",
+    "name": "HOLY ATTACK II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_22",
+    "name": "RIGHTEOUS PRAYER II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_23",
+    "name": "RIGHTEOUS COMBAT II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_24",
+    "name": "RIGHTEOUS COMBAT III",
+    "cost": 4,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_25",
+    "name": "MIGHTY PRAYER II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_26",
+    "name": "HOLY LIGHT II",
+    "cost": 2,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_27",
+    "name": "DIVINE DEFENSE II",
+    "cost": 3,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_28",
+    "name": "DIVINE DEFENSE III",
+    "cost": 4,
+    "type": "HERO_UPGRADE",
+    "text": "",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_29",
+    "name": "MIGHTY!",
+    "cost": 1,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "A chosen player gains Crit.",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_30",
+    "name": "CONSECRATION!",
+    "cost": 4,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "A chosen player gains Protect, Retribution, Crit, & Accuracy.",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_31",
+    "name": "BLESSED!",
+    "cost": 1,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn SWORD, draw 2 cards.\nOn HELMET, heal 3 health.\nOn LIFE, heal 4 health.\nOn PRAYER, gain 3CP.",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_32",
+    "name": "ABSOLUTION!",
+    "cost": 1,
+    "type": "ROLL_PHASE_ACTION",
+    "text": "Play only after being Attacked.\nRoll 1 die:\nOn SWORD, deal 3 dmg.\nOn HELMET, prevent 3 dmg.\nOn LIFE, prevent 5 dmg.\nOn PRAYER, prevent 2 dmg & gain 2CP.",
+    "effects": []
+  },
+  {
+    "identifier": "PALA_33",
+    "name": "DIVINE FAVOR!",
+    "cost": 0,
+    "type": "MAIN_PHASE_ACTION",
+    "text": "Roll 1 die:\nOn PRAYER, gain 4CP.\nOn any other outcome, draw 1 card.",
+    "effects": []
+  }
+]
